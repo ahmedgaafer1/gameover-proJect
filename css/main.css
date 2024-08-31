@@ -373,3 +373,10 @@ p {
 .fa-moon {
   color: #4d90f5;
 }
+
+
+@media (max-width:510px) {
+  #maintit{
+    font-size: 36px;
+  }
+}
