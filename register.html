@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Game Over Site" />
+    <meta name="keywords" content="Game Over , موقع العاب" />
+    <meta name="author" content="AHMED GAAFER" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+<body>
+    
+    <span class="position-fixed bottom-0 end-0 m-3 z-3">
+        <i role="button" id="mode" class="fa-regular fa-sun fa-xl p-3"></i>
+     </span>
+    <main class=" login min-vh-100 h-100">
+  <div class="container">
+    <div class="row gx-3">
+        <div class="left  col-lg-6 ">
+            <header class="text-center ">
+              
+                <h1>Register to Game Over</h1>
+            </header>
+            <form  class="row g-3 my-4" id="login">
+                <div class="col-6">
+                    <div class="form-data ">
+                        <input type="text"  id="fname" class="form-control" placeholder="First Name" >
+                        <ul class="alert aler  list-unstyled p-0 invalid-feedback">
+                            <li>First Name Is Required</li>
+                                 <li>Minmum Length 2 and Maxmum 20</li>
+                         </ul>
+                    </div>
+                </div>
+                    <div class="col-6">
+                    <div class="form-data">
+                        <input type="text"  id="lname" class="form-control" placeholder="Last Name" >
+                        <ul class="alert aler  list-unstyled p-0 invalid-feedback">
+                            <li>Last Name Is Required</li>
+                            <li>Minmum Length 2 and Maxmum 20</li>
+                         </ul>
+                    </div>
+                </div>
+                
+                <div class="col-12">
+                    <div class="form-data">
+                        <input type="email"  id="email" class="form-control" placeholder="Email-Adress">
+                        <ul class=" alert aler list-unstyled p-0  invalid-feedback">
+                            <li>Email is required</li>
+                            <li>In-valid Email</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-data">
+                        <input type="password"  id="password" class="form-control" placeholder="Password">
+                        <ul class=" alert aler list-unstyled p-0  invalid-feedback">
+                            <li>Password is required</li>
+                            <li>Minimun eight characters , at least one letter and one character </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-data">
+                        <input type="number"  id="age" class="form-control" placeholder="Enter Your Age">
+                        <ul class=" alert aler list-unstyled p-0  invalid-feedback">
+                            <li>Password is required</li>
+                            <li>Minimun eight characters , at least one letter and one character </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class=" main-btn w-100" id="btn-register ">Register </button>
+                    <p id="msg" class="text-center"></p>
+                </div>
+            </form>
+            <footer>
+                <p class=" text-center small ">Already a member?
+                    </p>
+                    <a href="#" id="registerclick" class="link-sec text-decoration-none " role="button">LogIn <i class="fa-solid fa-angle-right"></i></a>
+            </footer>
+        </div>
+        <div class="right  col-lg-6 d-none d-lg-block ">
+            <div class="img">
+                <img src="./assets/tyara.jpg" alt="">
+            </div>
+        </div>
+      </div>
+  </div>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/register.js"></script>
+
+</body>
+</html>
