@@ -27,7 +27,7 @@
   --secondary-text-color: blCK;
   --link-color: #bbbbbb;
   --button-background-color: black;
-  --button-background-color-hover: #9391fd;
+  --button-background-color-hover: rgba(149, 147, 255, 0.495);
   --button-text-color: #ffffff;
   --navbar-background-color: #333333;
   --header-color: black;
