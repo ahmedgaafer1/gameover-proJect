@@ -8,6 +8,7 @@
   --button-background-color-hover: rgba(149, 147, 255, 0.495);
   --button-text-color: #ffffff;
   --navbar-background-color: #97b6e29a;
+  --navbar-background-coloratmedia: #97b6e2;
   --header-color: rgba(255, 255, 255, 0.888);
   --footer-link-color: white;
   --footer-link-hover-color: #071148;
@@ -18,6 +19,7 @@
   --input-background-color: #ffffff;
   --BLACK: black;
   --main-title: #ffffff;
+  
 }
 
 [data-theme="dark"] {
@@ -30,6 +32,7 @@
   --button-background-color-hover: rgba(149, 147, 255, 0.495);
   --button-text-color: #ffffff;
   --navbar-background-color: #333333;
+  --navbar-background-coloratmedia: #333333;
   --header-color: black;
   --footer-link-color: black;
   --footer-link-hover-color: #ffffff;
@@ -379,4 +382,8 @@ p {
   #maintit{
     font-size: 36px;
   }
+  .navbar,
+.nav-link{
+  background-color: var(--navbar-background-coloratmedia);
+}
 }
