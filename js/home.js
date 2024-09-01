@@ -2,6 +2,8 @@
 let datagames=[];
 const loading = document.querySelector(".loading");
 const mode = document.getElementById("mode");
+const mininav = document.getElementById("navbarSupportedContent");
+const navbutton = document.getElementById("mininav");
 
 
 // ! =============> When Start ===============>
@@ -29,7 +31,10 @@ link.addEventListener("click", ()=>{
     link.classList.add("active");
 const category = link.dataset.category;
 console.log(category);
+
 getgames(category);
+
+
 
 })
     })
@@ -52,7 +57,10 @@ mode.addEventListener("click", function () {
     }
  });
 
+ navbutton.addEventListener('click',()=>{
+    mininav.classList.remove("d-none");
 
+ });
 
 // ? =================> functions ========>
 
@@ -67,8 +75,11 @@ mode.addEventListener("click", function () {
         };
   const api = await fetch(`https://free-to-play-games-database.p.rapidapi.com/api/games?category=${category}`,options);
   const data= await api.json();
+
 console.log(data);
+mininav.classList.add("d-none");
 displaydata(data);
+
 loading.classList.add("d-none"); // hide loading
 
     };

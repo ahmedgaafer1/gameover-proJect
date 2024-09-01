@@ -89,10 +89,6 @@ async function registerform(userdata){
     } else {
         document.getElementById('msg').innerHTML=response.errors?.email.message;
     }
-   
-
-    
-
 }
 
 // =============> Validation =============>  
@@ -112,12 +108,12 @@ return false;
 function validationMail(){
     const regexmail = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
     if (regexmail.test(inputs[2].value)){
-        inputs[2].classList.add("is-valid")
-        inputs[2].classList.remove("is-invalid")
+        inputs[2].classList.add("is-valid");
+        inputs[2].classList.remove("is-invalid");
     return true;
     }
-    inputs[2].classList.add("is-invalid")
-    inputs[2].classList.remove("is-valid")
+    inputs[2].classList.add("is-invalid");
+    inputs[2].classList.remove("is-valid");
     return false;
     
     };
