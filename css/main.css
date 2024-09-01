@@ -377,13 +377,20 @@ p {
   color: #4d90f5;
 }
 
-
+@media (max-width:992px) {
+  .navbar,
+  .nav-link{
+    background-color: var(--navbar-background-coloratmedia);
+  }
+}
 @media (max-width:510px) {
   #maintit{
     font-size: 36px;
   }
-  .navbar,
-.nav-link{
-  background-color: var(--navbar-background-coloratmedia);
+ 
+#logout{
+ padding: 0px !important;
+ align-items: flex-start !important;
 }
+
 }
