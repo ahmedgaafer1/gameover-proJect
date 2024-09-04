@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --form-background:#AAC2FF;
   --background-color: #f5f7ff;
   --text-color: #030e4d;
@@ -20,10 +20,10 @@
   --BLACK: black;
   --main-title: #ffffff;
   
-}
+} */
 
 [data-theme="dark"] {
-  --form-background:#AAC2FF;
+  --form-background: #aac2ff;
   --background-color: #121212;
   --text-color: #e0e0e0;
   --secondary-text-color: blCK;
@@ -43,6 +43,29 @@
   --input-background-color: transparent;
   --main-title: black;
 }
+[data-theme="light"] {
+  --form-background: #aac2ff;
+  --background-color: #f5f7ff;
+  --text-color: #030e4d;
+  --secondary-text-color: #383e80;
+  --link-color: #071148;
+  --button-background-color: #9391fd;
+  --button-background-color-hover: rgba(149, 147, 255, 0.495);
+  --button-text-color: #ffffff;
+  --navbar-background-color: #97b6e29a;
+  --navbar-background-coloratmedia: #97b6e2;
+  --header-color: rgba(255, 255, 255, 0.888);
+  --footer-link-color: white;
+  --footer-link-hover-color: #071148;
+  --card-background-color: #4d90f5;
+  --loader-background-color: #272b30e3;
+  --details-background-color: #272729be;
+  --shadow-color: rgba(93, 135, 246, 0.5);
+  --input-background-color: #ffffff;
+  --BLACK: black;
+  --main-title: #ffffff;
+}
+
 * {
   -webkit-transition: background-color 0.5s, color 0.2s;
   -o-transition: background-color 0.5s, color 0.2s;
@@ -155,8 +178,6 @@ form .main-btn:hover {
   background-color: var(--input-background-color) !important;
 }
 
-
-
 /* end form */
 
 /* NAvbar */
@@ -179,6 +200,8 @@ form .main-btn:hover {
   color: var(--footer-link-hover-color) !important;
   transition: color 0.5s;
 }
+
+
 /* end NAvbar */
 /* home card */
 .h4 {
@@ -377,20 +400,19 @@ p {
   color: #4d90f5;
 }
 
-@media (max-width:992px) {
+@media (max-width: 992px) {
   .navbar,
-  .nav-link{
+  .nav-link {
     background-color: var(--navbar-background-coloratmedia);
   }
 }
-@media (max-width:510px) {
-  #maintit{
+@media (max-width: 510px) {
+  #maintit {
     font-size: 36px;
   }
- 
-#logout{
- padding: 0px !important;
- align-items: flex-start !important;
-}
 
+  #logout {
+    padding: 0px !important;
+    align-items: flex-start !important;
+  }
 }
