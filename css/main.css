@@ -182,18 +182,21 @@ form .main-btn:hover {
 
 /* NAvbar */
 
-.navbar,
-.nav-link {
+.navbar{
   background-color: var(--navbar-background-color);
   color: var(--text-color) !important;
 }
-
+.nav-link {
+  background-color: transparent !important;
+  color: var(--text-color) !important;
+}
 .navbar-brand {
   color: var(--text-color) !important;
 }
 
 .navbar-nav .nav-link.active {
   color: var(--footer-link-hover-color) !important;
+
 }
 
 .navbar-nav .nav-link:hover {
@@ -230,7 +233,9 @@ form .main-btn:hover {
 .h6 {
   font-family: "Nerko One", cursive;
   color: var(--text-color) !important;
-  line-height: 22px;
+  line-height: 21px;
+  font-size: 14px;
+  font-weight: 400;
 }
 /* end home card */
 /* loader */
